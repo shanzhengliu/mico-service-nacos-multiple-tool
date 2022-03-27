@@ -1,7 +1,0 @@
-com\db\mapper\UserMapper.class
-com\db\model\User.class
-com\service\Order.class
-com\service\impl\OrderImpl.class
-com\Application.class
-com\Controller\UserController.class
-com\service\Login.class
