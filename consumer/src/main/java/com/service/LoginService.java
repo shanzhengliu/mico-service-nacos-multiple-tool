@@ -13,4 +13,7 @@ public interface LoginService {
 
     @RequestMapping("/user/findOne")
     String findOne();
+
+    @RequestMapping("/user/join")
+    String join();
 }

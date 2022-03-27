@@ -1,14 +1,15 @@
 package com.db.qentity;
 
+import static com.querydsl.core.types.PathMetadataFactory.*;
+
 import com.db.entity.User;
-import com.querydsl.core.types.Path;
+import com.querydsl.core.types.dsl.*;
+
 import com.querydsl.core.types.PathMetadata;
-import com.querydsl.core.types.dsl.EntityPathBase;
-import com.querydsl.core.types.dsl.StringPath;
 
 import javax.annotation.Generated;
 
-import static com.querydsl.core.types.PathMetadataFactory.forVariable;
+import com.querydsl.core.types.Path;
 
 
 /**
@@ -21,7 +22,7 @@ public class QUser extends EntityPathBase<User> {
 
     public static final QUser user = new QUser("user");
 
-    public final StringPath id = createString("id");
+    public final NumberPath<Long> id = createNumber("id", Long.class);
 
     public final StringPath password = createString("password");
 

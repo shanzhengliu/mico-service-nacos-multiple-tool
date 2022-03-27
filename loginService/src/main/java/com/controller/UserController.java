@@ -2,7 +2,9 @@ package com.controller;
 
 
 import com.db.qentity.QUser;
+import com.db.qentity.QUserInfo;
 import com.db.repository.UserRepository;
+import com.querydsl.core.Tuple;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.service.UserQueryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,5 +37,10 @@ public class UserController {
     @GetMapping("/findOne")
     public String findOne() {
         return userQueryService.queryOneUserByUserName("sam").getPassword();
+    }
+
+    @GetMapping("/join")
+    public String findOneInfo() {
+        return userQueryService.queryOneUserInfoByUserName("sam").get(QUserInfo.userInfo.userEmail);
     }
 }

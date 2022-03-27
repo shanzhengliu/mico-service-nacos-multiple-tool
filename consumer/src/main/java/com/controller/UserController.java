@@ -28,4 +28,9 @@ public class UserController {
     public String findOneTest() {
         return loginService.findOne();
     }
+
+    @GetMapping("/joinTest")
+    public String join() {
+        return loginService.join();
+    }
 }
