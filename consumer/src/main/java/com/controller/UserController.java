@@ -23,4 +23,9 @@ public class UserController {
     public String test() {
         return loginService.list();
     }
+
+    @GetMapping("/findOneTest")
+    public String findOneTest() {
+        return loginService.findOne();
+    }
 }

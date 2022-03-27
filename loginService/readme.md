@@ -18,7 +18,7 @@ springboot 的路由，懂的都懂，就是个正常路由
 
 ## service
 
-这个只是为了好看点， 理论上business业务在里面实现
+使用了jpaDSL做复杂查询， 写了个样例
 
 
 
