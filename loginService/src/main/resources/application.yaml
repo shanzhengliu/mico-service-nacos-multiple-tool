@@ -1,0 +1,9 @@
+#以下内容已经放到nacos配置中心
+
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3307/personal
+#    username: root
+#    password: 123456
+#

@@ -1,0 +1,15 @@
+server:
+  port: 5000
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+  application:
+    name: gateway
+  profiles:
+    active: dev
+ ##配置中心的文件data id 就是 gateway_dev.yaml

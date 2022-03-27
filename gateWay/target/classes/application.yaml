@@ -1,0 +1,31 @@
+
+#这个已经放在了config center里面了
+
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+
+#        locator:
+#          enabled: false
+#          lowerCaseServiceId: true
+
+#      routes:
+#          #服务id.懂的都懂
+#        - id: consumer
+
+#          #lb://你的服务名
+#          uri: lb://consumer
+#
+#          #这个是你当前的路径的匹配，例如， 如果你 匹配到你的url是127.0.0.1/consumer, 就会匹配到consumer 那个uri
+#          predicates:
+#            - Path=/consumer/**
+#
+#          #一定要加 stripPrefix, 隐藏坑，不加会造成拼接地址不对
+#          filters:
+#            - StripPrefix=1
+
+
+
+
+
